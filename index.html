@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+        }
+        .flowers {
+            font-size: 40px;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+        .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .signature {
+            font-style: italic;
+            font-size: 1.3em;
+            margin-top: 30px;
+            color: #ff69b4;
+        }
+        .heart {
+            color: red;
+            font-size: 30px;
+            animation: beat 1s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Mother's Day, Mom! <span class="heart">❤</span></h1>
+        
+        <div class="flowers">
+            🌸🌷🌹💐🌺🌻
+        </div>
+        
+        <div class="message">
+            <p>To the most amazing mom in the world,</p>
+            <p>Thank you for your endless love, patience, and support. You make every day brighter just by being you.</p>
+            <p>Today we celebrate you and all the wonderful things you do. I hope your day is as special as you are!</p>
+          <p>I know some times I can make you mad, but I will always love you no matter what.</p>
+        </div>
+        
+        <div class="flowers">
+            🌸🌷🌹💐🌺🌻
+        </div>
+        
+        <div class="signature">
+            With all my love,<br>
+            Aarav Sinha, ur favorite son. 
+        </div>
+    </div>
+    
+    <script>
+        // Simple animation for page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.card');
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease';
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
